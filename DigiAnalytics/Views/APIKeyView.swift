@@ -23,7 +23,7 @@ struct APIKeyView: View {
                 self.apiKey.wrappedValue = input
             }
             Button("Trouver ma clé d'API") {
-                if let url = URL(string: "https://digianalytics.fr/settings/api") {
+                if let url = URL(string: "https://digianalytics.fr/account/api") {
                     openURL(url)
                 }
             }

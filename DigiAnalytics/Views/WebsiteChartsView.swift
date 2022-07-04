@@ -6,7 +6,6 @@
 //
 
 import SwiftUI
-import SwiftUICharts
 
 struct WebsiteChartsView: View {
     
@@ -27,12 +26,12 @@ struct WebsiteChartsView: View {
                     .init(.adaptive(minimum: 400))
                 ]) {
                     ForEach(charts, id: \.name) { chart in
-                        BarChartView(
+                        /*BarChartView(
                             data: ChartData(points: chart.data.map({ Double($0.count ?? "") ?? 0 })),
                             title: chart.name.rawValue,
                             form: ChartForm.large
                         )
-                        .padding()
+                        .padding()*/
                     }
                 }
             }
